@@ -7,7 +7,7 @@ function Top() {
             .then(res => res.json())
             .then(res => {
                 console.log(res.data)
-                setCryptoArr(res.data.slice(1,10))
+                setCryptoArr(res.data.slice(0,10))
             })
             .catch(err => console.log(err))
     })
